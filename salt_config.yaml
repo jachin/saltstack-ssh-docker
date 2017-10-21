@@ -1,0 +1,10 @@
+file_roots:
+  base:
+    - /srv/salt
+    - /srv/formulas/letsencrypt
+
+ext_pillar:
+  - file_tree:
+      root_dir: /srv/pillars_as_files
+      follow_dir_links: False
+      keep_newline: True

@@ -1,0 +1,4 @@
+salt-ssh:
+  extra_filerefs:
+    - salt://letsencrypt/map.jinja
+    - salt://letsencrypt/defaults.yaml

@@ -1,0 +1,10 @@
+version: '2'
+services:
+  salt:
+    build: .
+    image: saltstack-ssh-docker:0.7
+    volumes:
+     - ./salt:/srv/salt
+     - ./pillar:/srv/pillar
+     - ./pillars_as_files:/srv/pillars_as_files
+     - ./formulas:/srv/formulas
